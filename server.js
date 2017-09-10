@@ -7,7 +7,13 @@
 var express = require('express');
 var app = express();
 
-app.get()
+app.get('/index', function(request, response){
+  
+  var query = request.query;
+  response.send(query);
+})
+
+
 
 /*
 'use strict';
@@ -60,8 +66,9 @@ app.use(function(err, req, res, next) {
   }  
 })
 
+*/
 app.listen(process.env.PORT, function () {
   console.log('Node.js listening ...');
 });
 
-*/
+

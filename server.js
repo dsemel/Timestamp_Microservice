@@ -7,7 +7,7 @@
 var express = require('express');
 var app = express();
 
-app.get('/index', function(request, response){
+app.get('/', function(request, response){
   
   var query = request.query;
   response.send(query);

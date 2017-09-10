@@ -7,10 +7,10 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function(request, response){
+app.get('/:query', function(request, response){
   
-  var query = request.query;
-  response.send(query);
+  var date = request.params.query;
+  response.send(date);
 })
 
 

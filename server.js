@@ -10,6 +10,7 @@ var app = express();
 app.get('/:query', function(request, response){
   
   var date = request.params.query;
+  date = new Date(Date.parse(date));
   response.send(date);
 })
 
@@ -67,6 +68,7 @@ app.use(function(err, req, res, next) {
 })
 
 */
+
 app.listen(process.env.PORT, function () {
   console.log('Node.js listening ...');
 });

@@ -6,6 +6,7 @@
 
 var express = require('express');
 var app = express();
+var fs = require('fs');
 
 app.get('/:query', function(request, response){
   
@@ -17,11 +18,11 @@ app.get('/:query', function(request, response){
 
 
 /*
+
 'use strict';
 
-var fs = require('fs');
-var express = require('express');
-var app = express();
+
+
 
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
@@ -47,6 +48,8 @@ app.route('/_api/package.json')
     });
   });
   
+  */
+  
 app.route('/')
     .get(function(req, res) {
 		  res.sendFile(process.cwd() + '/views/index.html');
@@ -67,7 +70,7 @@ app.use(function(err, req, res, next) {
   }  
 })
 
-*/
+
 
 app.listen(process.env.PORT, function () {
   console.log('Node.js listening ...');

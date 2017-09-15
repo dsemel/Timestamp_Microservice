@@ -9,12 +9,12 @@ var app = express();
 var fs = require('fs');
 
 var moment = require('moment');
-moment().format(MMMM D YYYY);
+
 
 app.get('/:query', function(request, response){
   
   var date = request.params.query;
-  date = new Date(Date.parse(date));
+  date = moment(date).format("MMMM D YYYY");
   response.send(date);
 })
 

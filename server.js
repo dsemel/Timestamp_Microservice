@@ -8,6 +8,9 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 
+var moment = require('moment');
+moment().format();
+
 app.get('/:query', function(request, response){
   
   var date = request.params.query;

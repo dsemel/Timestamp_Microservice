@@ -9,7 +9,7 @@ var app = express();
 var fs = require('fs');
 
 var moment = require('moment');
-moment().format();
+moment().format(MMMM D YYYY);
 
 app.get('/:query', function(request, response){
   

@@ -19,9 +19,19 @@ app.get('/:query', function(request, response){
   var date2 = date;
   
   if(isNaN(date) == true){
+    
+    if(!moment(date).isValid()){
+      
+      date = null;
+      num = null;
+    }
+    
+    else{
   date = Date.parse(date);  
-  num = moment.unix(date)/10000;
+  num = moment.unix(date)/1000000;
   date = moment(date2).format("MMMM D YYYY");
+    }
+    
   
   }
    else{

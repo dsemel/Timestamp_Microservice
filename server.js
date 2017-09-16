@@ -14,7 +14,12 @@ var moment = require('moment');
 app.get('/:query', function(request, response){
   
   var date = request.params.query;
+  date = new Date(Date.parse(date));
+  /*
+  if(date !== null){
   date = moment(date).format("MMMM D YYYY");
+  }
+  */
   response.send(date);
 })
 

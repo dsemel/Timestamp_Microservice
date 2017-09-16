@@ -12,21 +12,23 @@ var moment = require('moment');
 var num;
 
 app.get('/:query', function(request, response){
-app.set('/views/index.html');
+
   
   var date = request.params.query;
-  /*
-  date = new Date(Date.parse(date));
-  */
+  
+  var date2 = date;
+  
   if(isNaN(date) == true){
- 
-  date = moment(date).format("MMMM D YYYY");
+  date = Date.parse(date);  
+  num = moment.unix(date)/10000;
+  date = moment(date2).format("MMMM D YYYY");
+  
   }
    else{
    num = date;  
    date = moment.unix(date).format("MMMM D YYYY");
    }
-  response.render('/views/index',{"natural": date});
+  response.send({"unix": num, "natural": date});
 })
 
 

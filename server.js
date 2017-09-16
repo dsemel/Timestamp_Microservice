@@ -9,18 +9,24 @@ var app = express();
 var fs = require('fs');
 
 var moment = require('moment');
-
+var num;
 
 app.get('/:query', function(request, response){
+app.set('/views/index.html');
   
   var date = request.params.query;
-  date = new Date(Date.parse(date));
   /*
-  if(date !== null){
+  date = new Date(Date.parse(date));
+  */
+  if(isNaN(date) == true){
+ 
   date = moment(date).format("MMMM D YYYY");
   }
-  */
-  response.send(date);
+   else{
+   num = date;  
+   date = moment.unix(date).format("MMMM D YYYY");
+   }
+  response.render('/views/index',{"natural": date});
 })
 
 

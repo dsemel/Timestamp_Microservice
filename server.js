@@ -43,13 +43,13 @@ app.get('/:query', function(request, response){
 
 
 
-/*
+
 
 'use strict';
 
 
 
-
+/*
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
     var allowedOrigins = ['https://narrow-plane.gomix.me', 'https://www.freecodecamp.com'];
@@ -63,6 +63,8 @@ if (!process.env.DISABLE_XORIGIN) {
   });
 }
 
+*/
+
 app.use('/public', express.static(process.cwd() + '/public'));
 
 app.route('/_api/package.json')
@@ -74,7 +76,7 @@ app.route('/_api/package.json')
     });
   });
   
-  */
+  
   
 app.route('/')
     .get(function(req, res) {

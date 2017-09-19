@@ -11,16 +11,13 @@ var path = require('path');
 var moment = require('moment');
 var num;
 
-/*
-app.use(express.static('public'));
-app.set('views', path.join(__dirname,'views'));
-app.set('view engine', 'html');
 
-app.get('/', function(request,response){
-        
-   response.render('index');       
-});
-*/
+
+app.use(express.static(path.join(__dirname,'views')));
+
+
+
+
 
 
 app.get('/:query', function(request, response){
@@ -77,6 +74,8 @@ if (!process.env.DISABLE_XORIGIN) {
 
 
 */
+
+/*
 app.use('/public', express.static(process.cwd() + '/public'));
 
 
@@ -110,7 +109,7 @@ app.use(function(err, req, res, next) {
       .send(err.message || 'SERVER ERROR');
   }  
 })
-
+*/
 
 
 app.listen(process.env.PORT, function () {

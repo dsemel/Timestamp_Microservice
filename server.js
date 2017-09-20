@@ -15,6 +15,7 @@ var num;
 
 app.use(express.static(path.join(__dirname,'views')));
 
+app.use('/public', express.static(process.cwd() + '/public'));
 
 
 
@@ -58,6 +59,10 @@ app.get('/:query', function(request, response){
 
 
 
+app.listen(process.env.PORT, function () {
+  console.log('Node.js listening ...');
+});
+
 /*
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
@@ -75,9 +80,10 @@ if (!process.env.DISABLE_XORIGIN) {
 
 */
 
-/*
-app.use('/public', express.static(process.cwd() + '/public'));
 
+
+
+/*
 
 app.route('/_api/package.json')
   .get(function(req, res, next) {
@@ -112,9 +118,6 @@ app.use(function(err, req, res, next) {
 */
 
 
-app.listen(process.env.PORT, function () {
-  console.log('Node.js listening ...');
-});
 
 
 

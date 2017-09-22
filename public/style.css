@@ -31,13 +31,16 @@
 .box1{
   width:600px;
   display:flex;
-  background-color:gray;
+  
   justify-content:center;
   align-items:center;
  
 }
 
-
+ol{
+  display:flex;
+  justify-content:center;
+}
 
 a {
 	color: #2574A9;

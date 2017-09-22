@@ -29,11 +29,14 @@
 }
 
 .box1{
+  width:600px;
   display:flex;
+  background-color:gray;
   justify-content:center;
   align-items:center;
  
 }
+
 
 
 a {

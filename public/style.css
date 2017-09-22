@@ -40,6 +40,26 @@
  
 }
 
+.box2{
+  width:600px;
+  display:flex;
+  padding:10px;
+  justify-content:space-between;
+  align-items:center;
+  
+ 
+}
+
+.box3{
+  width:600px;
+  display:flex;
+  padding:10px;
+  justify-content:space-between;
+  align-items:center;
+  
+ 
+}
+
 .item1{
   
   width:400px;

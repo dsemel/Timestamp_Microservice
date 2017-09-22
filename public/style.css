@@ -38,22 +38,31 @@
 }
 
 .item1{
-  
-  margin-right:100px;
+  width:400px;
+  height:400px;
+  margin-right:50px;
 }
 
 .item2{
-  text-align:left;
+  width:400px;
+  height:400px;
+  text-align:justify;
 }
 
 .item3{
+  width:400px;
+  height:400px;
+  text-align:justify;
   margin-left:20px;
-  text-align:left;
+  
 }
 
 .item4{
+  width:400px;
+  height:400px;
+  text-align:justify;
   margin-left:20px;
-  text-align:left;
+
 }
 
 a {

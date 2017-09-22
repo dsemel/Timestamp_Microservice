@@ -41,22 +41,24 @@
 .item1{
   
   width:400px;
-  height:400px;
+  height:200px;
   margin-right:50px;
 }
 
 .item2{
 
   width:400px;
-  height:400px;
-  
+  height:200px;
+  border-right: 1px solid;
+ 
   text-align:left;
 }
 
 .item3{
 
   width:400px;
-  height:400px;
+  height:200px;
+  border-right: 1px solid;
   text-align:left;
   margin-left:20px;
   
@@ -65,11 +67,14 @@
 .item4{
 
   width:400px;
-  height:400px;
+  height:200px;
+  border-right: 1px solid;
   text-align:left;
   margin-left:20px;
 
 }
+
+
 
 a {
 	color: #2574A9;

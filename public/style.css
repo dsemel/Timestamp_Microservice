@@ -31,16 +31,13 @@
 .box1{
   width:600px;
   display:flex;
-  
-  justify-content:center;
+  padding:100px;
+  justify-content:space-between;
   align-items:center;
  
 }
 
-ol{
-  display:flex;
-  justify-content:center;
-}
+
 
 a {
 	color: #2574A9;

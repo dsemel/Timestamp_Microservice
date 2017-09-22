@@ -22,14 +22,19 @@
    
 }
 
-
-
-ol {
-	list-style-position: inside;
+.box{
+  display:flex;
+  justify-content:center;
+  
 }
-ul {
-	list-style-type: none;
+
+.box1{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+ 
 }
+
 
 a {
 	color: #2574A9;

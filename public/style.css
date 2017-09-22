@@ -31,13 +31,30 @@
 .box1{
   width:600px;
   display:flex;
-  padding:100px;
   justify-content:space-between;
   align-items:center;
+  
  
 }
 
+.item1{
+  
+  margin-right:100px;
+}
 
+.item2{
+  text-align:left;
+}
+
+.item3{
+  margin-left:20px;
+  text-align:left;
+}
+
+.item4{
+  margin-left:20px;
+  text-align:left;
+}
 
 a {
 	color: #2574A9;

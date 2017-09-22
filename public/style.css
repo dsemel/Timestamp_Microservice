@@ -23,6 +23,7 @@
 }
 
 .box{
+  padding:10px;
   display:flex;
   justify-content:center;
   
@@ -38,31 +39,34 @@
 }
 
 .item1{
+  
   width:400px;
   height:400px;
   margin-right:50px;
 }
 
 .item2{
+
   width:400px;
   height:400px;
   
-  text-align:justify;
+  text-align:left;
 }
 
 .item3{
+
   width:400px;
   height:400px;
-  text-align:justify;
-   padding-left:10px;
+  text-align:left;
   margin-left:20px;
   
 }
 
 .item4{
+
   width:400px;
   height:400px;
-  text-align:justify;
+  text-align:left;
   margin-left:20px;
 
 }

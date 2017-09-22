@@ -1,16 +1,27 @@
 /****** Main Styling ******/
 
-body {
+* {
 	font-family: 'arial';
 	font-size: 16px;
 	color: #222;
 	background-color: #ECF0F1;
 	text-align: center;
+  display:flex;
 }
 
-.container {
-	padding: 0;
-	margin-top: 40px;
+.header-container {
+  color: #5995DA;
+  background-color:#D6E9FE;
+	display:flex;
+  justify-content:center;
+}
+
+.header{
+   width:900px;
+   height:300px;
+   display:flex;
+   justify-content:space-between;
+   
 }
 
 .footer {
